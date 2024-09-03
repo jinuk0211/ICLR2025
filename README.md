@@ -1,7 +1,8 @@
 # ICLR2025
 
 prm 스크립트
------------------
+-----------
+```python
 import torch
 from process_supervision.prm import PRM
 from swarms.models import OpenAIChat
@@ -55,3 +56,4 @@ scores = prm_model.score_responses(responses, sent_kwargs)
 # Display results
 for query, response, score in zip(queries, responses, scores):
     print(f"Query: {query}\nResponse: {response}\nScore: {score}\n")
+```
